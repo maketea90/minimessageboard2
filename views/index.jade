@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  a(href='./new') link to create a new message
+  
+  each message in messages
+    
+      h2 #{message.user} 
+      h3 #{message.text} 
+      time #{message.added}
+
+      
